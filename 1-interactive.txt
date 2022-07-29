@@ -1,0 +1,111 @@
+""" literals in the interactive prompt
+
+These commands are intended to be run in the interactive terminal.
+Some lines will give errors.
+
+For the Python files (*.py) in this directory:
+- Only 2 through 5 will be targeted.
+- 5 and 6 are for students who finish early or already have some
+  familiarity with Python or coding.
+"""
+
+5
+5.5
+'5'
+'five'
+five
+#  The last one should give you an error, because we used a python name
+#    before we used it to name something.
+
+
+five = 5
+five
+
+
+a = 5
+a
+b = a
+b
+a = 7
+a
+
+
+# Booleans
+5 == 5
+5 == 5.0
+5 == '5'
+5 == (5)
+
+
+5 + 2
+5 - 2
+5 / 2
+5 * 2
+
+
+'Hello' + ', world.'
+'some' + 'thing'
+'this' - 'is' + 'at'
+'this' / 'th'
+'this' / 'q'
+'this' * 'that'
+
+
+'this' + 5
+'this' - 5
+'this' / 5
+'this' * 5
+'this' * 5.5
+
+
+name = 'Kevin'
+age = 13
+
+print(name)
+print(age)
+print('My name is ' + name)
+print('My age is ' + age)
+
+print('My name is ' + name + ' and I am ' + int(age))
+print(f'My name is {name} and I am {age} years old.')
+
+status = 'happy'
+print(f'{name} is {age} years old and feels {status}.')
+
+
+if 5 == 5.0:
+    print('yes')
+5 == 5.0
+
+if 5 is 5.0:
+    print('yes')
+5 is 5.0
+
+
+# Sequences, Lists, and Dictionaries
+a = 1, 2, 'test', True
+a
+a = (1, 2, 'test', False)
+a
+b = (1)
+b
+a[0]
+a[0:2]
+a[0] = 'first'
+# Sequences are immutable; they cannot be changed.
+#   Strings are essentially sequences of characters.
+
+a = 'test'
+a[0]
+a[0] = 'r'
+# Strings are also immutable
+'r' + a[1:]
+
+
+# Lists are mutable sequences of objects
+a = [1, 2, 'test', True]
+a
+a[0] = 3
+a
+b = [1]
+b
